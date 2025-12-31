@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="topnav">
+  <header>
+    <img class="head-logo" src="pics/frontr1.png">
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="service.html">Services</a>
+      <a href="ourwork.html">Our work</a>
+      <a href="company.html">Company</a>
+      <a href="contactus.html">Contact Us</a>
+
+    </nav>
+    <div class="buttons">
+      <button class="login" onclick="window.location.href='login.html'">Login</button>
+      <button class="signup" onclick="window.location.href='signup.html'">Sign Up</button>
+    </div>
+  </header>
+
+</div>
+<main>
+  <div class="contactme">
+    <h1>Contact Us</h1>
+    <form onsubmit="Submit()">
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required><br><br>
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      
+      <button type="submit" class="submit">Send Message</button>
+    </form>
+    <div id="msg"></div>
+  </div>
+  
+
+  <div class="Qt">
+    <h2>View Sent Messages</h2>
+    <button onclick="fetchAndDisplayData()">Refresh Messages</button>
+    <div id="messages-list">
+
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+
+<div class="footer">
+  <p> <a href="#" ><img class="phone" src="pics/phone.png"></a> 647-***-****</p>
+  <p> <a href="#" ><img class="loc" src="pics/location.png"></a> ON,CA</p>
+  <p> <a href="#" ><img class="email" src="pics/email.png"></a> Mahmood_homafar@f.frontr.ca</p>
+  <div class="icons">
+    <a href="#" ><img class="face" src="pics/facebook.png"></a>
+    <a href="#" ><img class="linkedin" src="pics/linkedin.png"></a>
+    <a href="#" ><img class="insta" src="pics/insta.png"></a>
+  </div>
+  <p class="copyright">&copy All rights reserved for Frontr</p>
+</div>
+
+</body>
+</html>

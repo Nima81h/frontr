@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<main>
+  <div class="Portal">
+    <div class="user_head">
+      <img class="uhead-logo" src="pics/frontr1.png">
+      <h2>Customer Portal</h2>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+    <div class="layout">
+
+      <div class="links">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="orders.html">Orders</a>
+        <a href="wallet.html">Wallet</a>
+      </div>
+
+
+      <div class="content">
+        <div id="user-info">
+          <div class="loading">Loading dashboard...</div>
+        </div>
+        
+        <div class="dashboard-stats">
+          <div class="stat-card">
+            <h3>Total Outstanding</h3>
+            <p id="outstanding">$0.00</p>
+          </div>
+        </div>
+        
+        <div class="recent-orders">
+          <h3>Recent Orders</h3>
+          <div id="recent-orders">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="footer">
+  <p> <a href="#" ><img class="phone" src="pics/phone.png"></a> 647-***-****</p>
+  <p> <a href="#" ><img class="loc" src="pics/location.png"></a> ON,CA</p>
+  <p> <a href="#" ><img class="email" src="pics/email.png"></a> Mahmood_homafar@f.frontr.ca</p>
+  <div class="icons">
+    <a href="#" ><img class="face" src="pics/facebook.png"></a>
+    <a href="#" ><img class="linkedin" src="pics/linkedin.png"></a>
+    <a href="#" ><img class="insta" src="pics/insta.png"></a>
+  </div>
+  <p class="copyright">&copy All rights reserved for Frontr</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

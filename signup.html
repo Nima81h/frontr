@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="topnav">
+  <header>
+    <img class="head-logo" src="pics/frontr1.png">
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="service.html">Services</a>
+      <a href="ourwork.html">Our work</a>
+      <a href="company.html">Company</a>
+      <a href="contactus.html">Contact Us</a>
+
+    </nav>
+    <div class="buttons">
+      <button class="login" onclick="window.location.href='login.html'">Login</button>
+      <button class="signup" onclick="window.location.href='signup.html'">Sign Up</button>
+    </div>
+  </header>
+
+</div>
+<main>
+  <div class="signupp">
+    <h1>Register</h1>
+    <form id="signup" onsubmit="signupform(event)">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="pass">Password</label>
+      <input type="password" id="pass" name="pass" required><br><br>
+      
+      <label for="confirm-pass">Confirm Password</label>
+      <input type="password" id="confirm-pass" name="confirm-pass" required><br><br>
+      
+      <button type="submit" class="submit">Sign Up</button>
+    </form>
+  </div>
+</main>
+
+<script src="script.js"></script>
+
+<div class="footer">
+  <p> <a href="#" ><img class="phone" src="pics/phone.png"></a> 647-***-****</p>
+  <p> <a href="#" ><img class="loc" src="pics/location.png"></a> ON,CA</p>
+  <p> <a href="#" ><img class="email" src="pics/email.png"></a> Mahmood_homafar@f.frontr.ca</p>
+  <div class="icons">
+    <a href="#" ><img class="face" src="pics/facebook.png"></a>
+    <a href="#" ><img class="linkedin" src="pics/linkedin.png"></a>
+    <a href="#" ><img class="insta" src="pics/insta.png"></a>
+  </div>
+  <p class="copyright">&copy All rights reserved for Frontr</p>
+</div>
+
+</body>
+</html>

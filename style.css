@@ -1,0 +1,310 @@
+.head-logo{
+    width: 200px;
+}
+.topnav{
+    width: 100%;
+    margin:0 auto;
+    padding:0 2px;
+    position: relative;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+
+}
+nav{
+    display:flex ;
+    align-items: center;
+    gap: 5rem;
+    margin-left:10%;
+
+}
+nav a{
+    font-size:17px;
+    letter-spacing: 0.1rem;
+    color:#e7e7e7;
+}
+nav a:hover{
+    color:#a7a7a7;
+}
+.signup, .login, .submit, .quote{
+    background-color: #a7a7a7;
+    color:black;
+    padding:0.8rem 2rem;
+    border-radius:50px;
+    border:none;
+    font-size:1rem;
+    font-weight:500;
+    transition: background-color 0.2s ease;
+    cursor:pointer;
+    z-index:999;
+}
+
+.signup:hover, .login:hover, .submit:hover{
+    background-color: white;
+}
+.signupp, .loginp {
+    color: #663ab5;
+    text-align: center;
+    padding:10px;
+    background-color: rgba(14, 10, 10, 0.88);
+    border:white solid;
+    border-radius:5%;
+    margin:100px 600px;
+}.buttons{
+    font-size:17px;
+    letter-spacing: 0.1rem;
+
+
+}
+.footer{
+    border-top:2px solid rgba(158, 158, 158, 0.76);
+
+}
+.footer img{
+    width:30px;
+
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 10px 0;
+
+}
+.copyright {
+    text-align: center;
+
+}
+
+body{
+
+    background-color:black;
+    color:#e7e7e7;
+    min-height: 100vh;
+    line-height:1.5;
+}
+main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(70vh - 6rem);
+
+
+}
+main h1{
+    font-size:4rem;
+    font-weight:600;
+    letter-spacing: 0.1em;
+    margin:2rem 0;
+    line-height:1.2;
+    text-shadow:0 0 10px rgba(128, 128, 128, 0.418);
+}
+main p{
+    max-width:60rem;
+    font-size:1.2rem;
+    color:gray;
+    letter-spacing:0.05rem;
+}
+.mbutton {
+    display:flex;
+    gap:1rem;
+
+}
+.viewmore {
+    padding:0.7rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight:600;
+    letter-spacing: 0.1rem;
+    background-color: #000000;
+    color:#a7a7a7;
+    cursor: pointer;
+
+
+}
+.viewmore:hover{
+    background-color: white;
+}
+.getstarted{
+    padding:0.7rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight:600;
+    letter-spacing: 0.1rem;
+    background-color: #a7a7a7;
+    cursor: pointer;
+}
+.getstarted:hover{
+    background-color: white;
+}
+
+
+
+
+.service {
+    width:100%;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.section {
+    width:90%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    gap:700px;
+}
+
+
+
+.section:hover {
+    background-color: rgba(49, 4, 90, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+.gif {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.gif img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gif .static {
+    z-index: 2;
+}
+
+.gif .animated {
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.section:hover .gif .animated {
+    opacity: 1;
+
+}
+
+.section:hover .gif .static {
+    opacity: 0;
+}
+
+.description {
+    flex: 1;
+}
+
+.description h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #663ab5;
+}
+
+.description p {
+    font-size: 16px;
+    color: #555;
+}
+.contactme, .quote{ color: #663ab5;
+    text-align: center;
+    padding:10px;
+    background-color: rgba(14, 10, 10, 0.88);
+    border:white solid;
+    border-radius:5%;
+    margin:100px 600px;
+}
+.Qt{
+   display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Qt p{
+    font-size:18px;
+    letter-spacing: 0.1rem;
+}
+.uhead-logo {
+    width: 100px;
+}
+.user_head{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:1rem 2rem;
+    justify-content: space-between;
+}
+
+.logout-btn {
+    background-color: #a7a7a7;
+    color: black;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.logout-btn:hover {
+    background-color: white;
+}
+.portal {
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    background-color: rgba(231, 231, 231, 0.66);
+    padding: 20px;
+    box-sizing: border-box;
+    gap:2rem;
+    height: 40rem;
+}
+
+.links a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size:1rem;
+}
+
+.content {
+    flex:1;
+    padding:20px;
+    margin-left:100px;
+}
+.layout {
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+}

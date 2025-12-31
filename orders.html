@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<main>
+  <div class="Portal">
+    <div class="user_head">
+      <img class="uhead-logo" src="pics/frontr1.png">
+      <h2>Customer Portal</h2>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+    <div class="layout">
+
+      <div class="links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="orders.html" class="active">Orders</a>
+        <a href="wallet.html">Wallet</a>
+      </div>
+
+      <div class="content">
+        <div class="orders-section">
+          <h3>Create New Order</h3>
+          <form onsubmit="createOrder(event)">
+            <label for="service-type">Service Type:</label><br>
+            <select id="service-type" name="service-type" required>
+              <option value="">Select service type</option>
+              <option value="web_development">Web Development</option>
+              <option value="maintanance & support">maintanace & support</option>
+              <option value="digital_marketing">Digital Marketing</option>
+            </select><br><br>
+            
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" rows="4" placeholder="Describe your project requirements"></textarea><br><br>
+            
+            <label for="amount">Amount ($):</label><br><br>
+            
+            <input type="submit" value="Create Order" class="submit">
+          </form>
+        </div>
+        
+        <div class="orders-list">
+          <h3>My Orders</h3>
+          <div id="orders-list">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="footer">
+  <p> <a href="#" ><img class="phone" src="pics/phone.png"></a> 647-***-****</p>
+  <p> <a href="#" ><img class="loc" src="pics/location.png"></a> ON,CA</p>
+  <p> <a href="#" ><img class="email" src="pics/email.png"></a> Mahmood_homafar@f.frontr.ca</p>
+  <div class="icons">
+    <a href="#" ><img class="face" src="pics/facebook.png"></a>
+    <a href="#" ><img class="linkedin" src="pics/linkedin.png"></a>
+    <a href="#" ><img class="insta" src="pics/insta.png"></a>
+  </div>
+  <p class="copyright">&copy All rights reserved for Frontr</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
